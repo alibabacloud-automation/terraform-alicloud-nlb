@@ -20,39 +20,6 @@ $ terraform apply
 
 Note that this example may create resources which cost money. Run `terraform destroy` when you don't need these resources.
 
-## Requirements
-
-| Name | Version |
-|------|---------|
-| terraform | >= 1.0 |
-| alicloud | >= 1.191.0 |
-
-## Providers
-
-| Name | Version |
-|------|---------|
-| alicloud | >= 1.191.0 |
-
-## Inputs
-
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| name | Name prefix for all resources | `string` | `"nlb-example"` | no |
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
-| nlb_id | The ID of the Network Load Balancer |
-| nlb_dns_name | The DNS name of the Network Load Balancer |
-| nlb_status | The status of the Network Load Balancer |
-| server_group_id | The ID of the server group |
-| listener_ids | List of listener IDs |
-| listeners | Map of listener information |
-| vpc_id | The ID of the VPC |
-| vswitch_ids | List of VSwitch IDs |
-| security_group_id | The ID of the security group |
-
 ## Architecture
 
 This example creates:
